@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+    background-color: #111; /* Siyah Arka Plan */
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #4CAF50; /* Neon Yeşil Başlık Rengi */
+    text-shadow: 0 0 5px #0F0, 0 0 10px #0F0;
+    margin-bottom:  0px; /* Bu ayar görselden önce biraz boşluk için yaptım */
+}
+
+/*Seçtiğim ana görselin konumu*/
+.image-container {
+    text-align: center; /* Resmi konteyner içinde ortalar */
+    margin-bottom: 50px; /* Tuşlardan önce boşluk */
+}
+
+  
+
+.drum-image {
+    max-width: 40%;  
+    height: auto;
+    border-radius: 10px;
+    
+    box-shadow: 0 0 5px #0F0, 0 0 10px #0F0; 
+}
+
+.set {
+    margin: 3% auto;  
+    max-width: 900px;
+}
+
+.drum {
+    outline: none;
+    border: 3px solid #0F0; /* Neon Yeşil Kenarlık */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0F0; /* Neon Yeşil Metin Rengi */
+    border-radius: 8px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+    background-color: #000; /* Siyah Düğme Arka Planı */
+    cursor: pointer;
+    
+    /* 🔆 NEON IŞILTISI */
+    box-shadow: 0 0 5px #0F0, 0 0 10px #0F0, 0 0 15px #0F0;
+    
+    /* Animasyonlu geçişi yumuşatır */
+    transition: all 0.1s ease-out, box-shadow 0.1s ease-out, transform 0.1s ease-out;
+}
+
+/* 🔥 Basıldığında Animasyon (.pressed) */
+.pressed {
+    /* ✨ Daha Güçlü Neon Parlama */
+    box-shadow: 
+        0 0 10px #0F0,
+        0 0 20px #0F0,
+        0 0 40px #0F0,
+        0 0 80px #0F0;
+        
+    border-color: #FFF; 
+    color: #FFF; 
+    transform: scale(1.1); 
+    background-color: #050; 
+}
